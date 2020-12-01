@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1 class="display-4">Your Wishlist</h1>
+      <p class="lead">This is a dynamic website that enables the CRUD functions to create a wishlist for the client. Thorugh this, they can enter there name and there item and that will be added to their wishlist.</p>
+      <hr class="my-4">
+      <p>The CRUD app stands for Create Read Update Delete</p>
+      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    <div class="row" style="background-image: url(https://wallpaperset.com/w/full/f/1/f/480580.jpg);">
+      <div class="col">
+        <form  method="POST" action="/wishlist">
+          <div class="form-group">
+            <label for="exampleFormControlInput1">Name</label>
+            <input name="Name" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example - Thomas">
+          </div><label for="exampleFormControlInput1">Wish List Item</label>
+          <input name="Item" type="text" class="form-control" id="exampleFormControlInput1" placeholder="Example - Books">
+          
+          <button style="margin-top: 20px; background-color: blue; color: white; border: none; size: 200px;" type="submit">Submit</button>
+        </form>
+      </div>
+      <div class="col2">
+<img style=" border-radius: 700px; width: 500px; height: 500px; " src="https://i.pinimg.com/originals/79/43/97/79439713b8187730e6555b12b307bcf0.jpg" alt="">
+      </div>
+      </div>
+      <div>
+    </div>
+   
+
+    </div>
+   
+   
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    /* Create two equal columns that floats next to each other */
+    .col {
+      float: left;
+      width: 50%;
+      padding: 10px;
+      height: 300px; /* Should be removed. Only for demonstration */
+      margin-left: 100px;
+    }
+    .col2{
+      float: right;
+      width: 50%;
+      padding: 10px;
+      height: 300px;
+      margin-left: 100px;
+    }
+    .col2 #img{
+      border-radius: 700px;
+    }
+    
+    /* Clear floats after the columns */
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+      height: 550px;
+    }
+    </style>
+</html>
